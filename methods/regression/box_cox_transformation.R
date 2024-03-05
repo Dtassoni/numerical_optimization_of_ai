@@ -5,7 +5,7 @@ setwd("C:/Users/dtass/OneDrive/Desktop/R work")
 
 # Read data from Excel file
 tryCatch({
-  D <- read.xlsx(xlsxFile = "box_cox_example.xlsx")
+  D <- read.xlsx(xlsxFile = "x^2.xlsx")
   print(D)
 }, error = function(e) {
   stop("Error reading data: ", e$message)
